@@ -27,19 +27,6 @@ public class Main {
         ---------------------( Solution) --------------------------
         double []fixedNumbers = {1, 4, 17, 7, 25, 3, 100 };
 
-        ArrayList <Double> numbers = new ArrayList<>();
-        Scanner in = new Scanner(System.in);
-
-        double user = 1;
-        //fill the array list from user
-        while(user != 0 ){
-            System.out.println("Enter the number , to close press 0 ");
-            user = in.nextInt();
-            if(user == 0 ){
-                break;
-            }
-            numbers.add(user);
-        }
         //calculate the sum and avg
         double sum = 0  , avg = 0 ;
 
@@ -49,8 +36,8 @@ public class Main {
         avg = sum / fixedNumbers.length;
 
         //calculate the numbers greater than avg
-        System.out.print("Numbers greater than avg : ");
-        for (double number : numbers) {
+        System.out.print("Avg = "+avg+" and the Numbers that greater than avg is : ");
+        for (double number : fixedNumbers) {
             if(number > avg){
                 System.out.print(number + "  ");
             }
