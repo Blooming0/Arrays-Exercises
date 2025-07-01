@@ -19,6 +19,7 @@ public class Main {
             System.out.println("it's not the same");
         }
          */
+
         /*
         ----------------------(Question Two)------------------------
         Write a Java program to find the numbers greater than the average of the
